@@ -1,4 +1,19 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+
 /* variables for fonts and colors */
+:root {
+    --dark-blue-primary: hsl(243, 87%, 12%);
+    --desaturated-blue-primary: hsl(238, 22%, 44%);
+    --bright-blue-accent: hsl(224, 93%, 58%);
+    --moderate-cyan-accent: hsl(170, 45%, 43%);
+    --light-grayish-blue-neutral: hsl(240, 75%, 98%);
+    --light-gray-neutral: hsl(0, 0%, 75%);
+    --text-size-paragraph: 16px;
+    --text-headings-cta-head_nav: 'Raleway';
+    --body-text-family: 'Open Sans';
+}
 
 /* Css Reset */
 * {
@@ -31,7 +46,69 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* Main Styles */
 
+.container-wrapper {
+    margin-inline: auto;
+    max-width: 1400px;
+    padding-inline: 40px;
+}
 
+.main-header.flex {
+    margin: 20px 0;
+    justify-content: space-between;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-container.flex {
+    width: 250px;
+    justify-content: space-between;
+}
+
+.hero-section.flex {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-left {
+    width: fit-content;
+}
+
+.hero-heading {
+    margin-block-end: 10px;
+    font-family: var(--text-headings-cta-head_nav);
+    color: var(--dark-blue-primary);
+}
+
+.heading-paragraph {
+    font-family: var(--body-text-family);
+    font-size: var(--text-size-paragraph);
+    color: var(--dark-blue-primary);
+    margin-block-end: 15px;
+}
+
+.input-container {
+    width: 100%;
+    justify-content: start;
+}
+
+.input-container input {
+    margin-inline-end: 10px;
+    min-height: 30px;
+}
+
+.input-container 
+
+.section-right-bg {
+    min-width: 400px;
+    min-height: 400px;
+    background-image: url(/images/illustration-1.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 
 
